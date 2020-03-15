@@ -1,0 +1,585 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #969696;
+}
+
+html {
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  margin-top: 200px;
+  width: 100%;
+  background-color: #1d1d1d;
+  min-height: 628px;
+  position: relative;
+  bottom: 0;
+}
+
+.jumbotron {
+  background-image: url('../image/bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 638px;
+  margin-top: -40px;
+}
+
+#mynav {
+  font-family: 'Orbitron', sans-serif;
+  text-transform: capitalize;
+  font-size: 17px;
+  margin-top: 0px;
+}
+
+#title_jumbotron {
+  margin-top: 160px;
+}
+
+.title_core {
+  font-size: 50px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.img-profile {
+  opacity: 0;
+  margin-top: 0px;
+}
+
+.title-about {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 35px;
+  color: #111111;
+}
+
+#box-vision {
+  height: 620px;
+    background-color: #131617;
+    margin-top: 100px;
+}
+
+
+.row>.column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#title-visi {
+  color: #fff;
+  font-size: 35px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.jurusan-tkj {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 0px;
+  margin-top: 15px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.jurusan-rpl {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 8px;
+  margin-top: 15px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.jurusan-mm {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 45px;
+  margin-top: 15px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.card-img-top {
+  height: 286px;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.thumbnail {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+.divisi-content {
+  width: 100%;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+.open {
+  position: absolute;
+}
+
+#cp {
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#bottom-nav {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+}
+
+#bottom-nav a {
+  color: #fff;
+}
+
+#title-divisi,
+#title-gallery {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 35px;
+  color: #111111;
+}
+
+.text-divisi {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  color: #111111;
+}
+
+#content_about {
+  opacity: 0;
+  margin-top: 100px;
+  transition: 2s;
+}
+
+#content_about.muncul {
+  opacity: 1;
+  margin-top: 0;
+}
+
+#content_visi {
+  opacity: 0;
+  margin-top: 100px;
+  transition: 2s;
+}
+
+#content_visi.muncul {
+  opacity: 1;
+  margin-top: 0;
+}
+
+#content_leader {
+  opacity: 0;
+  transition: 2s;
+  transform: translate(-50px, 0);
+}
+
+#content_leader.muncul {
+  opacity: 1;
+  margin-top: 0;
+  transform: translate(0, 0);
+}
+
+#content_divisi {
+  opacity: 0;
+  margin-top: 100px;
+  transition: 2s;
+}
+
+#content_divisi.muncul {
+  opacity: 1;
+  margin-top: 0;
+}
+
+#content_program {
+  opacity: 0;
+  margin-top: 100px;
+  transition: 2s;
+  transform: translate(-50px, 0);
+}
+
+#content_program.muncul {
+  opacity: 1;
+  margin-top: 0;
+  transform: translate(0, 0);
+}
+
+#content_gallery {
+  opacity: 0;
+  margin-top: 100px;
+  transition: 2s;
+}
+
+#content_gallery.muncul {
+  opacity: 1;
+  margin-top: 0;
+}
+
+#gotop {
+  opacity: 0;
+  margin-top: 100px;
+  transition: 1s;
+  transform: translate(0, 50px);
+}
+
+#gotop.muncul {
+  opacity: 1;
+  margin-top: 0;
+  transform: translate(0, 0);
+}
+
+.gallery-section .gallery {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.gallery-section .image {
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.gallery-section .image:hover img {
+  opacity: 0.5;
+}
+
+a.gotopbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none !important;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+  z-index: 99;
+  transition: 0.25s;
+}
+
+#box-divisi h1 {
+  text-align: center;
+}
+
+@media screen and (max-width:960px) {
+  .gallery-section .image {
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gallery-section .image {
+    flex: 100%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .gallery-section .image {
+    flex: 100%;
+  }
+}
+
+
+/* Responsuve */
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  .thumbnail {
+    width: 50%;
+  }
+}
+
+a{
+  font-family: 'Orbitron', sans-serif;
+}
+
+.box_visi{
+  height: 476.5px;
+  width: 368px;
+  border-top: 5px solid  #98F5DF;
+  border-right: 0px solid  #E2E8F0;
+  border-bottom: 0px solid  #E2E8F0;
+  border-left: 0px solid  #E2E8F0;
+  padding: 54px 54px 54px 54px;
+  min-height: auto;
+  min-width: auto;
+  background-color: #1c2122;
+  transition: .25s;
+}
+
+.box_visi:hover{
+  margin-top: -10px;
+}
+
+#icon-visi{
+  color: #667076;
+  font-size: 140px;
+  margin-left: 80px;
+  transition: .25s;
+}
+
+#icon-visi:hover{
+  color: #98F5DF;
+  transform: rotate(10deg);
+}
+
+#contact{
+  font-size: 60px;
+  color: #98F5DF;
+  transition: .25s;
+}
+
+#contact:hover{
+    color: #fff;
+}
+
+.btn-program{
+  width: 200px;
+  height: 50px;
+  font-family: 'Orbitron', sans-serif;
+  color: #1d1d1d;
+  background-color: transparent;
+  border-color: #1d1d1d;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.btn-program:hover{
+  color: white;
+  background-color: #1d1d1d;
+}
+
+#icon_contact_ig{
+  color: #98F5DF;
+  font-size: 60px;
+}
+
+#icon_contact_ig:hover{
+  color: #fff;
+}
+
+#icon_contact_tw{
+  color: #98F5DF;
+  font-size: 60px;
+}
+
+#icon_contact_tw:hover{
+  color: #fff;
+}
+
+#icon_contact_em{
+  color: #98F5DF;
+  font-size: 60px;
+}
+
+#icon_contact_em:hover{
+  color: #fff;
+}
+
+#icon_contact_ph{
+  color: #98F5DF;
+  font-size: 60px;
+}
+
+#icon_contact_ph:hover{
+  color: #fff;
+}
